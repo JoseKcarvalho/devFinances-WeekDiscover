@@ -7,42 +7,31 @@ const Modal = {
   close() {
     document.querySelector('.modal-overlay')
       .classList.remove('active')
-    //  document.getElementsByClassName('input-group') = ""
     document.getElementById("description").style.border = "none"
     document.getElementById("amount").style.border = "none"
+    document.getElementById("amount").value = ""
+    document.getElementById("description").value = ""
+    document.getElementById("date").value = ""
+
   }
   // Criar uma função toogle() para substituir as informações acima
 
 }
-
-  // If user clicks anywhere outside of the modal, Modal will close
-
-  var modal = document.getElementById('modal-wrapper');
-  window.onclick = function (event) {
-      if (event.target == modal) {
-          modal.style.display = "none";
-      }
-  }
 
 /*Criar uma cor na borda do first input*/
 const Color = {
   NewColor() {
     // document.getElementById("description").style.border = "0.01rem solid #3dd705"
     document.getElementById("amount").style.border = "0.01rem solid #3dd705"
-
+    document.getElementById("amount").value = ''
   },
+
   NewPrintColor() {
-    // document.getElementById("description").style.border = "0.01rem solid #e92929"
+    document.getElementById("amount").style.border = "0.01rem solid #e92929"
     document
-    .getElementById("amount").style.border = "0.01rem solid #e92929"
-    
+      .getElementById("amount").value = '-'
   }
 }
-
-function myFunction(event) {
-  document.getElementById("amount").innerHTML = "-" + event;
-}
-
 
 const Storage = {
   get() {
@@ -51,7 +40,7 @@ const Storage = {
 
   set(transactions) {
     localStorage.setItem("dev.finances:transactions",
-    JSON.stringify(transactions))
+      JSON.stringify(transactions))
   }
 }
 
@@ -152,7 +141,7 @@ const Utils = {
   formatAmount(value) {
     // value = Number(value.replace(/\,?\.?/g, "")) * 100
 
-    value = value *100
+    value = value * 100
     return Math.round(value)
     // console.log(value)
   },
@@ -255,7 +244,7 @@ const Form = {
 const App = {
   init() {
     Transaction.all.forEach(DOM.addTransaction)
-   
+
     DOM.updateBalance()
 
     Storage.set(Transaction.all)
