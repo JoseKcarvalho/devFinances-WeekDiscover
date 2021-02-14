@@ -4,7 +4,7 @@ criamos uma apliaçao 100% funcional utilizando conceitos base, e armazenagem no
 
 ## Getting Started
 
-![animation all pages aplication](https://github.com/JoseKcarvalho/desafiosRocketseatLaunchbase/blob/main/readme.gif)
+![homeFinaces](https://user-images.githubusercontent.com/37086193/107888094-6b34f480-6ee9-11eb-92df-f80fac1a1aae.gif)
 
 ### Pré-requisitos
 
