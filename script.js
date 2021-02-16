@@ -1,3 +1,4 @@
+
 const Modal = {
   open() {
     document.querySelector('.modal-overlay')
@@ -24,12 +25,16 @@ const Color = {
     // document.getElementById("description").style.border = "0.01rem solid #3dd705"
     document.getElementById("amount").style.border = "0.01rem solid #3dd705"
     document.getElementById("amount").value = ''
+    document.getElementById('description').focus()
+
+
   },
 
   NewPrintColor() {
     document.getElementById("amount").style.border = "0.01rem solid #e92929"
-    document
-      .getElementById("amount").value = '-'
+    document.getElementById("amount").value = '-'
+    document.getElementById('description').focus()
+
   }
 }
 

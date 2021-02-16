@@ -201,7 +201,7 @@ header {
 /*balances cards style*/
 .card {
     background: #FFF;
-    padding: 1.5rem 2rem;
+    padding: 2rem 1rem;
     border-radius: 0.25rem;
     margin-bottom:  2rem;
     color: var(--color-dark-blue);
@@ -439,7 +439,7 @@ input[type="date"] {
     #balance {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
+        gap: 1.5rem;
     }
 }
 
@@ -519,7 +519,7 @@ input[type="date"] {
     width: 30%;
     padding-bottom: 30px;
     border-radius: 10px;
-    max-width: 550px;
+    /* max-width: 21vw; */
     }
     
     .item-box-login {
