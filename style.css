@@ -160,7 +160,6 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* margin: 1rem 8rem; */
     cursor: pointer;
 }
 
@@ -403,20 +402,6 @@ input[type="date"] {
     width: 48%;
 }
 
-/*---------------------*/
-
-/* footer - styles*/
-/* footer {
-    position: relative;
-    top: 30vh;
-    background-color: #969cb37a;
-    text-align: center;
-    padding: 1rem;
-    color:  var(--color-dark-blue);
-    opacity:  0.6;
-    bottom: 0;
-} */
-
 /* resposive - styles*/
 @media (min-width: 800px) {
     html {
@@ -447,9 +432,9 @@ input[type="date"] {
 
 /* Full-width input fields */
 #boxs input[type=text], input[type=password] {
-    width: 87%;
+    width: 100%;
     padding: 7px 20px;
-    margin: 8px 26px;
+    margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
@@ -461,11 +446,13 @@ input[type="date"] {
     input[type=checkbox] {
         padding: 0;
         width: 2rem;
+        align-self: center;
     }
     
     /* Set a style for all buttons */
     #boxs {
         box-sizing: border-box;
+        margin: 0 30px
     }
 
     #boxs #login {
@@ -473,13 +460,14 @@ input[type="date"] {
     color: white;
     padding: 10px;
     border-radius: 8px;
-    margin: 8px 26px;
     border: none;
     cursor: pointer;
-    width: 87%;
+    width: 100%;
     font-size:20px;
     outline: none;
+    margin-top: 15px;
     }
+
     #boxs #login:hover {
     opacity: 0.8;
     }
@@ -513,18 +501,18 @@ input[type="date"] {
     /* Modal Content Box */
     .modal-content {
     background-color: #fefefe;
-    /* margin: 4% auto 15% auto; */
     margin: 4% auto;
     border: 1px solid #888;
     width: 30%;
     padding-bottom: 30px;
     border-radius: 10px;
-    /* max-width: 21vw; */
     }
     
     .item-box-login {
-        margin-left: 6rem;
+        display: grid;
+        grid-auto-flow: column;
         color: #6d6c74;
+  
     }
      
     /* The Close Button (x) */
@@ -551,20 +539,19 @@ input[type="date"] {
     to {transform: scale(1)}
     }
 
-    #group-login {
-        max-width: 90%;
-        margin: 0 auto;
-        padding-top: 20px;
-        align-items: center;
+    #group-login  {
+        color: #03011070;
     }
 
-    #group-login:last-child {
-        display: flex;
-    }
-
-    #group-login a:hover {
+    #group-login:hover {
         color: #030110;
-    }
+    } 
   
+    #group-login-users {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
 

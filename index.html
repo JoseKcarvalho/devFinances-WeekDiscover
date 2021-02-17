@@ -101,7 +101,7 @@
                     <form action="" onsubmit="Form.submit(event)">
                         <div class="input-group">
                             <label class="sr-only" for="description">Description</label>
-                            <input type="text" id="description" name="description" placeholder="Description" autofocus >
+                            <input type="text" id="description" name="description" placeholder="Description" autofocus="autofocus">
                         </div>
                         <div class="input-group">
                             <label class="sr-only" for="amount">Amount</label>
@@ -141,24 +141,28 @@
                         <input type="text" placeholder="Enter Username" name="uname">
                         <input type="password" placeholder="Enter Password" name="psw">
                         <button id="login" type="submit">Login</button>
-                        <div id="group-login">
-                            <input type="checkbox">
-                            Remember me
-                            <a class="item-box-login" href="#">Forgot Password ?</a>
+                        <div id="group-login-users">
+                            <div class="item-box-login">
+                                <input type="checkbox">
+                                Remember me
+                            </div>
+
+                            <a id="group-login" href="#">Forgot Password ?</a>
                         </div>
                     </div>
+                </div>
 
-                </form>
-
-            </div>
+            </form>
 
         </div>
 
-        <script src="./script.js"></script>
+    </div>
 
-        <footer>
-            <p>dev.finances</p>
-        </footer>
+    <script src="./script.js"></script>
 
-    </body>
+    <footer>
+        <p>dev.finances</p>
+    </footer>
+
+</body>
 </html>
